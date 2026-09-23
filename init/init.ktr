@@ -1,0 +1,1610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>init</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <directory>/</directory>
+    <parameters>
+    </parameters>
+    <log>
+      <trans-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <size_limit_lines/>
+        <interval/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STATUS</id>
+          <enabled>Y</enabled>
+          <name>STATUS</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+          <subject/>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>STARTDATE</id>
+          <enabled>Y</enabled>
+          <name>STARTDATE</name>
+        </field>
+        <field>
+          <id>ENDDATE</id>
+          <enabled>Y</enabled>
+          <name>ENDDATE</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>DEPDATE</id>
+          <enabled>Y</enabled>
+          <name>DEPDATE</name>
+        </field>
+        <field>
+          <id>REPLAYDATE</id>
+          <enabled>Y</enabled>
+          <name>REPLAYDATE</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>Y</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+        <field>
+          <id>EXECUTING_SERVER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_SERVER</name>
+        </field>
+        <field>
+          <id>EXECUTING_USER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_USER</name>
+        </field>
+        <field>
+          <id>CLIENT</id>
+          <enabled>N</enabled>
+          <name>CLIENT</name>
+        </field>
+      </trans-log-table>
+      <perf-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <interval/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>SEQ_NR</id>
+          <enabled>Y</enabled>
+          <name>SEQ_NR</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>INPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>INPUT_BUFFER_ROWS</name>
+        </field>
+        <field>
+          <id>OUTPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>OUTPUT_BUFFER_ROWS</name>
+        </field>
+      </perf-log-table>
+      <channel-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>LOGGING_OBJECT_TYPE</id>
+          <enabled>Y</enabled>
+          <name>LOGGING_OBJECT_TYPE</name>
+        </field>
+        <field>
+          <id>OBJECT_NAME</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_NAME</name>
+        </field>
+        <field>
+          <id>OBJECT_COPY</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_COPY</name>
+        </field>
+        <field>
+          <id>REPOSITORY_DIRECTORY</id>
+          <enabled>Y</enabled>
+          <name>REPOSITORY_DIRECTORY</name>
+        </field>
+        <field>
+          <id>FILENAME</id>
+          <enabled>Y</enabled>
+          <name>FILENAME</name>
+        </field>
+        <field>
+          <id>OBJECT_ID</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_ID</name>
+        </field>
+        <field>
+          <id>OBJECT_REVISION</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_REVISION</name>
+        </field>
+        <field>
+          <id>PARENT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>PARENT_CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>ROOT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>ROOT_CHANNEL_ID</name>
+        </field>
+      </channel-log-table>
+      <step-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>N</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+      </step-log-table>
+      <metrics-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_DATE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_CODE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_CODE</name>
+        </field>
+        <field>
+          <id>METRICS_DESCRIPTION</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DESCRIPTION</name>
+        </field>
+        <field>
+          <id>METRICS_SUBJECT</id>
+          <enabled>Y</enabled>
+          <name>METRICS_SUBJECT</name>
+        </field>
+        <field>
+          <id>METRICS_TYPE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_TYPE</name>
+        </field>
+        <field>
+          <id>METRICS_VALUE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_VALUE</name>
+        </field>
+      </metrics-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+    <created_user>-</created_user>
+    <created_date>2025/09/04 11:31:53.233</created_date>
+    <modified_user>-</modified_user>
+    <modified_date>2025/09/04 11:31:53.233</modified_date>
+    <key_for_session_key>H4sIAAAAAAAA/wMAAAAAAAAAAAA=</key_for_session_key>
+    <is_key_private>N</is_key_private>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>dw_mssql</name>
+    <server>10.10.1.99</server>
+    <type>MSSQLNATIVE</type>
+    <access>Native</access>
+    <database>EIS_DW</database>
+    <port>1433</port>
+    <username>sa</username>
+    <password>Encrypted 2be98afc82acdc697ff14ab74d799fbfa</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>EXTRA_OPTION_MSSQLNATIVE.encrypt</code>
+        <attribute>true</attribute>
+      </attribute>
+      <attribute>
+        <code>EXTRA_OPTION_MSSQLNATIVE.trustServerCertificate</code>
+        <attribute>true</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQLUseIntegratedSecurity</code>
+        <attribute>false</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1433</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <order>
+  </order>
+  <step>
+    <name>dbo init</name>
+    <type>ExecSQL</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>dw_mssql</connection>
+    <execute_each_row>N</execute_each_row>
+    <single_statement>N</single_statement>
+    <replace_variables>Y</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>DROP TABLE IF EXISTS [dbo].[d_Agama];
+CREATE TABLE [dbo].[d_Agama] (
+    [KdAgama] SMALLINT NOT NULL,
+    [KdProfile] SMALLINT NOT NULL,
+    [KdAgamaoltp] VARCHAR(10) NOT NULL,
+    [NamaAgama] VARCHAR(20) NOT NULL,
+    [RDNamaAgama] VARCHAR(20),
+    [StatusEnabled] SMALLINT NOT NULL,
+
+    CONSTRAINT UQ_d_Agama UNIQUE (KdAgama, KdProfile)
+);
+
+DROP TABLE IF EXISTS [dbo].[d_Alamat];
+CREATE TABLE [dbo].[d_Alamat] (
+    [KdAlamat] INT IDENTITY(1,1) PRIMARY KEY,
+    [NamaDesaKelurahan] VARCHAR(50) NOT NULL,
+    [RDNamaDesaKelurahan] VARCHAR(50) NULL,
+    [NamaKecamatan] VARCHAR(50) NOT NULL,
+    [RDNamaKecamatan] VARCHAR(50) NULL,
+    [NamaKotaKabupaten] VARCHAR(50) NOT NULL,
+    [RDNamaKotaKabupaten] VARCHAR(50) NULL,
+    [NamaProvinsi] VARCHAR(50) NOT NULL,
+    [RDNamaProvinsi] VARCHAR(50) NULL,
+    [NamaNegara] VARCHAR(50) NOT NULL,
+    [RDNamaNegara] VARCHAR(50) NULL,
+    [StatusEnabled] SMALLINT NOT NULL
+);
+
+DROP TABLE IF EXISTS [dbo].[d_Asal];
+CREATE TABLE [dbo].[d_Asal] (
+    [KdAsal] SMALLINT NOT NULL,
+    [KdProfile] SMALLINT NOT NULL,
+    [KdAsaloltp] VARCHAR(10) NOT NULL,
+    [NamaAsal] VARCHAR(50) NOT NULL,
+    [RDNamaAsal] VARCHAR(50) NOT NULL,
+    [NamaAsalHeadL1] VARCHAR(50) NULL,
+    [RDNamaAsalHeadL1] CHAR(10) NULL,
+    [StatusEnabled] SMALLINT NOT NULL,
+
+    CONSTRAINT UQ_d_Asal UNIQUE (KdAsal, KdProfile)
+)
+
+DROP TABLE IF EXISTS [dbo].[d_Entitas];
+CREATE TABLE [dbo].[d_Entitas] (
+    [NoEntitas] INT IDENTITY(1,1) PRIMARY KEY,
+    [KdProfile] SMALLINT NOT NULL,
+    [NoEntitasoltp] VARCHAR(15) NOT NULL,
+    [KdJenisEntitas] SMALLINT NOT NULL,
+    [KdTitle] SMALLINT NOT NULL,
+    [NamaLengkap] VARCHAR(150) NOT NULL,
+    [TempatLahir] VARCHAR(50),
+    [KdKalenderTglLahir] INT,
+    [KdJenisKelamin] SMALLINT,
+    [KdAgama] SMALLINT,
+    [KdStatusPerkawinan] SMALLINT,
+    [KdSuku] SMALLINT,
+    [KdGolonganDarah] SMALLINT,
+    [KdPekerjaan] SMALLINT,
+    [KdStruktural] SMALLINT,
+    [KdFungsional] SMALLINT,
+    [KdPangkat] SMALLINT,
+    [KdNegara] INT,
+    [KdPendidikan] SMALLINT,
+    [KdJurusan] SMALLINT,
+    [KdAlamat] INT,
+    [KdKategoriEntitas] SMALLINT,
+    [KdStatusEntitas] SMALLINT NOT NULL,
+    [StatusEnabled] INT NOT NULL
+);
+
+DROP TABLE IF EXISTS [dbo].[d_Eselon];
+CREATE TABLE [dbo].[d_Eselon] (
+    [KdEselon] SMALLINT NOT NULL,
+    [KdProfile] SMALLINT NOT NULL,
+    [KdEselonoltp] VARCHAR(15) NOT NULL,
+    [NamaEselon] VARCHAR(30) NOT NULL,
+    [RDNamaEselon] VARCHAR(30) NOT NULL,
+    [StatusEnabled] SMALLINT NOT NULL,
+
+    CONSTRAINT UQ_d_Eselon UNIQUE (KdEselon, KdProfile)
+);
+
+DROP TABLE IF EXISTS [dbo].[d_Fungsional];
+CREATE TABLE [dbo].[d_Fungsional] (
+    [KdFungsional] SMALLINT NOT NULL,
+    [KdProfile] SMALLINT NOT NULL,
+    [KdFungsionaloltp] VARCHAR(10) NOT NULL,
+    [NamaFungsional] VARCHAR(50) NOT NULL,
+    [RDNamaFungsional] VARCHAR(50) NOT NULL,
+    [NamaKelompok] VARCHAR(50),
+    [RDNamaKelompok] VARCHAR(50),
+    [NamaKelompokHeadL1] VARCHAR(50),
+    [RDNamaKelompokHeadL1] VARCHAR(50),
+    [StatusEnabled] SMALLINT NOT NULL,
+
+    CONSTRAINT UQ_d_Fungsional UNIQUE (KdFungsional, KdProfile)
+);
+
+DROP TABLE IF EXISTS [dbo].[d_GolonganDarah];
+CREATE TABLE [dbo].[d_GolonganDarah] (
+    [KdGolonganDarah] SMALLINT NOT NULL,
+    [KdProfile] SMALLINT NOT NULL,
+    [KdGolonganDaraholtp] VARCHAR(10) NOT NULL,
+    [NamaGolonganDarah] VARCHAR(25) NOT NULL,
+    [RDNamaGolonganDarah] VARCHAR(25),
+    [StatusEnabled] SMALLINT NOT NULL,
+
+    CONSTRAINT UQ_d_GolonganDarah UNIQUE (KdGolonganDarah, KdProfile)
+);
+
+DROP TABLE IF EXISTS [dbo].[d_Hubungan];
+CREATE TABLE [dbo].[d_Hubungan] (
+    [KdHubungan] SMALLINT NOT NULL,
+    [KdProfile] SMALLINT NOT NULL,
+    [KdHubunganoltp] VARCHAR(10) NOT NULL,
+    [NamaHubungan] VARCHAR(50) NOT NULL,
+    [RDNamaHubungan] VARCHAR(50),
+    [NamaHubunganHeadL1] VARCHAR(50),
+    [RDNamaHubunganHeadL1] VARCHAR(50),
+    [StatusEnabled] SMALLINT NOT NULL,
+
+    CONSTRAINT UQ_d_Hubungan UNIQUE (KdHubungan, KdProfile)
+);
+
+DROP TABLE IF EXISTS [dbo].[d_ICD];
+CREATE TABLE [dbo].[d_ICD] (
+    [KdICD] SMALLINT NOT NULL,
+    [KdProfile] SMALLINT NOT NULL,
+    [KdICDoltp] VARCHAR(10) NOT NULL,
+    [NamaICD] VARCHAR(150) NOT NULL,
+    [RDNamaICD] VARCHAR(150),
+    [NamaKategoriICD] VARCHAR(150),
+    [RDNamaKategoriICD] VARCHAR(150),
+    [NamaJenisICD] VARCHAR(50),
+    [RDNamaJenisICD] VARCHAR(50),
+    [StatusEnabled] SMALLINT NOT NULL,
+
+    CONSTRAINT UQ_d_ICD
+        UNIQUE (KdICD, KdProfile)
+);
+
+DROP TABLE IF EXISTS [dbo].[d_JenisDiagnosa];
+CREATE TABLE [dbo].[d_JenisDiagnosa] (
+    [KdJenisDiagnosa] SMALLINT NOT NULL,
+    [KdProfile] SMALLINT NOT NULL,
+    [KdJenisDiagnosaoltp] VARCHAR(10) NOT NULL,
+    [NamaJenisDiagnosa] VARCHAR(50) NOT NULL,
+    [RDNamaJenisDiagnosa] VARCHAR(50) NOT NULL,
+    [StatusEnabled] SMALLINT NOT NULL,
+
+    CONSTRAINT UQ_d_JenisDiagnosa UNIQUE (KdJenisDiagnosa, KdProfile)
+);
+
+DROP TABLE IF EXISTS [dbo].[d_JenisDokumen];
+CREATE TABLE [dbo].[d_JenisDokumen] (
+    [KdJenisDokumen] SMALLINT NOT NULL,
+    [KdProfile] SMALLINT NOT NULL,
+    [KdJenisDokumenoltp] VARCHAR(10) NOT NULL,
+    [NamaJenisDokumen] VARCHAR(50) NOT NULL,
+    [RDNamaJenisDokumen] VARCHAR(50),
+    [NamaJenisDokumenHeadL1] VARCHAR(50),
+    [RDNamaJenisDokumenHeadL1] VARCHAR(50),
+    [StatusEnabled] SMALLINT NOT NULL,
+
+    CONSTRAINT UQ_d_JenisDokumen UNIQUE (KdJenisDokumen, KdProfile)
+);
+
+DROP TABLE IF EXISTS [dbo].[d_JenisEntitas];
+CREATE TABLE [dbo].[d_JenisEntitas] (
+    [KdJenisEntitas] SMALLINT NOT NULL,
+    [KdProfile] SMALLINT NOT NULL,
+    [KdJenisEntitasoltp] VARCHAR(10) NOT NULL,
+    [NamaJenisEntitas] VARCHAR(50) NOT NULL,
+    [RDNamaJenisEntitas] VARCHAR(50),
+    [NamaJenisEntitasHeadL1] VARCHAR(50),
+    [RDNamaJenisEntitasHeadL1] VARCHAR(50),
+    [StatusEnabled] SMALLINT NOT NULL,
+
+    CONSTRAINT UQ_d_JenisEntitas UNIQUE (KdJenisEntitas, KdProfile)
+);
+
+DROP TABLE IF EXISTS [dbo].[d_JenisKelamin];
+CREATE TABLE [dbo].[d_JenisKelamin] (
+    [KdJenisKelamin] SMALLINT NOT NULL,
+    [KdProfile] SMALLINT NOT NULL,
+    [KdJenisKelaminoltp] VARCHAR(10) NOT NULL,
+    [NamaJenisKelamin] VARCHAR(25) NOT NULL,
+    [RDNamaJenisKelamin] VARCHAR(25) NOT NULL,
+    [StatusEnabled] SMALLINT NOT NULL,
+
+    CONSTRAINT UQ_d_JenisKelamin UNIQUE (KdJenisKelamin, KdProfile)
+);
+
+DROP TABLE IF EXISTS [dbo].[d_Jurusan];
+CREATE TABLE [dbo].[d_Jurusan] (
+    [KdJurusan] SMALLINT NOT NULL,
+    [KdProfile] SMALLINT NOT NULL,
+    [KdJurusanoltp] VARCHAR(15) NOT NULL,
+    [NamaJurusan] VARCHAR(100) NOT NULL,
+    [RDNamaJurusan] VARCHAR(100) NOT NULL,
+    [NamaJurusanHeadL1] VARCHAR(100),
+    [RDNamaJurusanHeadL1] VARCHAR(100),
+    [StatusEnabled] SMALLINT NOT NULL,
+
+    CONSTRAINT UQ_d_Jurusan UNIQUE (KdJurusan, KdProfile)
+);
+
+DROP TABLE IF EXISTS [dbo].[d_Kalender];
+CREATE TABLE [dbo].[d_Kalender] (
+    [KdKalender] INT IDENTITY(1,1) PRIMARY KEY,
+    [Tanggal] DATE NOT NULL,
+    [NamaHari] VARCHAR(15) NOT NULL,
+    [RDNamaHari] VARCHAR(15) NOT NULL,
+    [NamaBulan] VARCHAR(15) NOT NULL,
+    [RDNamaBulan] VARCHAR(15) NOT NULL,
+    [NamaTahun] SMALLINT NOT NULL,
+    [HariKeDlmMinggu] SMALLINT NOT NULL,
+    [HariKeDlmBulan] SMALLINT NOT NULL,
+    [HariKeDlmTahun] SMALLINT NOT NULL,
+    [MingguKeDlmTahun] SMALLINT NOT NULL,
+    [BulanKeDlmTahun] SMALLINT NOT NULL,
+    [TriwulanKeDlmTahun] SMALLINT NOT NULL,
+    [RDNamaTriwulan] VARCHAR(15) NULL,
+    [SemesterKeDlmTahun] SMALLINT NOT NULL,
+    [RDNamaSemester] VARCHAR(15) NULL,
+    [StatusEnabled] SMALLINT NOT NULL
+);
+
+DROP TABLE IF EXISTS [dbo].[d_KasusPenyakit];
+CREATE TABLE [dbo].[d_KasusPenyakit] (
+    [KdKasusPenyakit] SMALLINT NOT NULL,
+    [KdProfile] SMALLINT NOT NULL,
+    [KdKasusPenyakitoltp] VARCHAR(10) NOT NULL,
+    [NamaKasusPenyakit] VARCHAR(75) NOT NULL,
+    [RDNamaKasusPenyakit] VARCHAR(75) NOT NULL,
+    [NamaPelayananProfile] VARCHAR(75) NULL,
+    [RDNamaPelayananProfile] VARCHAR(75) NULL,
+    [NamaPelayananProfileHeadL1] VARCHAR(75) NULL,
+    [RDNamaPelayananProfileHeadL1] VARCHAR(75) NULL,
+    [StatusEnabled] SMALLINT NOT NULL,
+
+    CONSTRAINT UQ_d_KasusPenyakit UNIQUE (KdKasusPenyakit, KdProfile)
+);
+
+DROP TABLE IF EXISTS [dbo].[d_KategoriEntitas];
+CREATE TABLE [dbo].[d_KategoriEntitas] (
+    [KdKategoriEntitas] SMALLINT NOT NULL,
+    [KdProfile] SMALLINT NOT NULL,
+    [KdKategoriEntitasoltp] VARCHAR(10) NOT NULL,
+    [NamaKategoriEntitas] VARCHAR(50) NOT NULL,
+    [RDNamaKategoriEntitas] VARCHAR(50) NOT NULL,
+    [NamaKategoriEntitasHeadL1] VARCHAR(50) NOT NULL,
+    [RDNamaKategoriEntitasHeadL1] VARCHAR(50) NOT NULL,
+    [NamaKategoriEntitasHeadL2] VARCHAR(50),
+    [RDNamaKategoriEntitasHeadL2] VARCHAR(50),
+    [StatusEnabled] SMALLINT NOT NULL,
+
+    CONSTRAINT UQ_d_KategoriEntitas UNIQUE (KdKategoriEntitas, KdProfile)
+);
+
+DROP TABLE IF EXISTS [dbo].[d_Kelas];
+CREATE TABLE [dbo].[d_Kelas] (
+    [KdKelas] SMALLINT NOT NULL,
+    [KdProfile] SMALLINT NOT NULL,
+    [KdKelasoltp] VARCHAR(10) NOT NULL,
+    [NamaKelas] VARCHAR(25) NOT NULL,
+    [RDNamaKelas] VARCHAR(25) NOT NULL,
+    [NoUrut] SMALLINT,
+    [NamaKelasHeadL1] VARCHAR(15) NULL,
+    [RDNamaKelasHeadL1] VARCHAR(15) NULL,
+    [StatusEnabled] SMALLINT NOT NULL,
+
+    CONSTRAINT UQ_d_Kelas UNIQUE (KdKelas, KdProfile)
+);
+
+DROP TABLE IF EXISTS [dbo].[d_KelompokKlien];
+CREATE TABLE [dbo].[d_KelompokKlien] (
+    [KdKelompokKlien] SMALLINT NOT NULL,
+    [KdProfile] SMALLINT NOT NULL,
+    [KdKelompokKlienoltp] VARCHAR(10) NOT NULL,
+    [NamaKelompokKlien] VARCHAR(50) NOT NULL,
+    [RDNamaKelompokKlien] VARCHAR(50) NOT NULL,
+    [NamaKelompokKlienHeadL1] VARCHAR(50) NULL,
+    [RDNamaKelompokKlienHeadL1] VARCHAR(50) NULL,
+    [StatusEnabled] SMALLINT NOT NULL,
+
+    CONSTRAINT UQ_d_KelompokKlien UNIQUE (KdKelompokKlien, KdProfile)
+);
+
+DROP TABLE IF EXISTS [dbo].[d_Kondisi];
+CREATE TABLE [dbo].[d_Kondisi] (
+    [KdKondisi] SMALLINT NOT NULL,
+    [KdProfile] SMALLINT NOT NULL,
+    [KdKondisioltp] VARCHAR(10) NOT NULL,
+    [NamaKondisi] VARCHAR(50) NOT NULL,
+    [RDNamaKondisi] VARCHAR(50) NOT NULL,
+    [NamaKondisiHeadL1] VARCHAR(50) NULL,
+    [RDNamaKondisiHeadL1] VARCHAR(50) NULL,
+    [StatusEnabled] SMALLINT NOT NULL,
+
+    CONSTRAINT UQ_d_Kondisi UNIQUE (KdKondisi, KdProfile)
+);
+
+DROP TABLE IF EXISTS [dbo].[d_LevelTingkat];
+CREATE TABLE [dbo].[d_LevelTingkat] (
+    [KdLevelTingkat] SMALLINT NOT NULL,
+    [KdProfile] SMALLINT NOT NULL,
+    [KdLevelTingkatoltp] VARCHAR(15) NOT NULL,
+    [NamaLevelTingkat] VARCHAR(50) NOT NULL,
+    [RDNamaLevelTingkat] VARCHAR(50) NOT NULL,
+    [NoUrut] SMALLINT,
+    [NamaLevelTingkatHeadL1] VARCHAR(50) NOT NULL,
+    [RDNamaLevelTingkatHeadL1] VARCHAR(50) NOT NULL,
+    [StatusEnabled] SMALLINT NOT NULL,
+
+    CONSTRAINT UQ_d_LevelTingkat UNIQUE (KdLevelTingkat, KdProfile)
+);
+
+DROP TABLE IF EXISTS [dbo].[d_Negara];
+CREATE TABLE [dbo].[d_Negara] (
+    [KdNegara] INT IDENTITY(1,1) PRIMARY KEY,
+    [KdNegaraoltp] VARCHAR(10) NOT NULL,
+    [NamaNegara] VARCHAR(50) NOT NULL,
+    [RDNamaNegara] VARCHAR(50) NOT NULL,
+    [StatusEnabled] SMALLINT NOT NULL
+);
+
+DROP TABLE IF EXISTS [dbo].[d_Pangkat];
+CREATE TABLE [dbo].[d_Pangkat] (
+    [KdPangkat] SMALLINT NOT NULL,
+    [KdProfile] SMALLINT NOT NULL,
+    [KdPangkatoltp] VARCHAR(10) NOT NULL,
+    [NamaPangkat] VARCHAR(30) NOT NULL,
+    [RDNamaPangkat] VARCHAR(30) NOT NULL,
+    [NamaPangkatHeadL1] VARCHAR(30),
+    [RDNamaPangkatHeadL1] VARCHAR(30),
+    [NamaGolongan] VARCHAR(20),
+    [RDNamaGolongan] VARCHAR(20),
+    [NamaGolonganHeadL1] VARCHAR(20),
+    [RDNamaGolonganHeadL1] VARCHAR(20),
+    [StatusEnabled] SMALLINT NOT NULL,
+
+    CONSTRAINT UQ_d_Pangkat UNIQUE (KdPangkat, KdProfile)
+);
+
+DROP TABLE IF EXISTS [dbo].[d_Pekerjaan];
+CREATE TABLE [dbo].[d_Pekerjaan] (
+    [KdPekerjaan] SMALLINT NOT NULL,
+    [KdProfile] SMALLINT NOT NULL,
+    [KdPekerjaanoltp] VARCHAR(15) NOT NULL,
+    [NamaPekerjaan] VARCHAR(30) NOT NULL,
+    [RDNamaPekerjaan] VARCHAR(30),
+    [NamaPekerjaanHeadL1] VARCHAR(30),
+    [RDNamaPekerjaanHeadL1] VARCHAR(30),
+    [StatusEnabled] SMALLINT NOT NULL,
+
+    CONSTRAINT UQ_d_Pekerjaan UNIQUE (KdPekerjaan, KdProfile)
+);
+
+DROP TABLE IF EXISTS [dbo].[d_Pendidikan];
+CREATE TABLE [dbo].[d_Pendidikan] (
+    [KdPendidikan] SMALLINT NOT NULL,
+    [KdProfile] SMALLINT NOT NULL,
+    [KdPendidikanoltp] VARCHAR(10) NOT NULL,
+    [NamaPendidikan] VARCHAR(50) NOT NULL,
+    [RDNamaPendidikan] VARCHAR(50),
+    [NoUrut] SMALLINT,
+    [NamaPendidikanHeadL1] VARCHAR(50),
+    [RDNamaPendidikanHeadL1] VARCHAR(50),
+    [StatusEnabled] SMALLINT NOT NULL,
+
+    CONSTRAINT UQ_d_Pendidikan UNIQUE (KdPendidikan, KdProfile)
+);
+
+DROP TABLE IF EXISTS [dbo].[d_Penyebab];
+CREATE TABLE [dbo].[d_Penyebab] (
+    [KdPenyebab] SMALLINT NOT NULL,
+    [KdProfile] SMALLINT NOT NULL,
+    [KdPenyebaboltp] VARCHAR(10) NOT NULL,
+    [NamaPenyebab] VARCHAR(100) NOT NULL,
+    [RDNamaPenyebab] VARCHAR(100) NOT NULL,
+    [NamaPenyebabHeadL1] VARCHAR(100) NULL,
+    [RDNamaPenyebabHeadL1] VARCHAR(100) NULL,
+    [NamaKelompokPenyebab] VARCHAR(100) NULL,
+    [RDNamaKelompokPenyebab] VARCHAR(100) NULL,
+    [NamaKelompokPenyebabHeadL1] VARCHAR(100) NULL,
+    [RDNamaKelompokPenyebabHeadL1] VARCHAR(100) NULL,
+    [StatusEnabled] SMALLINT NOT NULL,
+
+    CONSTRAINT UQ_d_Penyebab UNIQUE (KdPenyebab, KdProfile)
+);
+
+DROP TABLE IF EXISTS [dbo].[d_Profile];
+CREATE TABLE [dbo].[d_Profile] (
+    [KdProfile] SMALLINT IDENTITY(1,1) PRIMARY KEY,
+    [KdProfileoltp] SMALLINT NOT NULL,
+    [NamaLengkap] VARCHAR(100) NOT NULL,
+    [RDNamaLengkap] VARCHAR(100) NOT NULL,
+    [NamaLengkapHeadL1] VARCHAR(100) NULL,
+    [RDNamaLengkapHeadL1] VARCHAR(100) NULL,
+    [StatusEnabled] SMALLINT NOT NULL
+);
+
+DROP TABLE IF EXISTS [dbo].[d_Ruangan];
+CREATE TABLE [dbo].[d_Ruangan] (
+    [KdRuangan] SMALLINT NOT NULL,
+    [KdProfile] SMALLINT NOT NULL,
+    [KdRuanganoltp] VARCHAR(10) NOT NULL,
+    [NamaRuangan] VARCHAR(50) NOT NULL,
+    [RDRuangan] VARCHAR(50) NOT NULL,
+    [NamaRuanganHeadL1] VARCHAR(50) NULL,
+    [RDNamaRuanganHeadL1] VARCHAR(50) NULL,
+    [NamaDepartemen] VARCHAR(50) NOT NULL,
+    [RDDepartemen] VARCHAR(50) NOT NULL,
+    [NamaDepartemenHeadL1] VARCHAR(50) NULL,
+    [RDNamaDepartemenHeadL1] VARCHAR(50) NULL,
+    [StatusEnabled] SMALLINT NOT NULL,
+
+    CONSTRAINT UQ_d_Ruangan UNIQUE (KdRuangan, KdProfile)
+);
+
+DROP TABLE IF EXISTS [dbo].[d_Status];
+CREATE TABLE [dbo].[d_Status] (
+    [KdStatus] SMALLINT NOT NULL,
+    [KdProfile] SMALLINT NOT NULL,
+    [KdStatusoltp] VARCHAR(10) NOT NULL,
+    [NamaStatus] VARCHAR(50) NOT NULL,
+    [RDNamaStatus] VARCHAR(50) NOT NULL,
+    [NamaStatusHeadL1] VARCHAR(50) NULL,
+    [RDNamaStatusHeadL1] VARCHAR(50) NULL,
+    [StatusEnabled] SMALLINT NOT NULL,
+
+    CONSTRAINT UQ_d_Status UNIQUE (KdStatus, KdProfile)
+);
+
+DROP TABLE IF EXISTS [dbo].[d_Struktural];
+CREATE TABLE [dbo].[d_Struktural] (
+    [KdStruktural] SMALLINT NOT NULL,
+    [KdProfile] SMALLINT NOT NULL,
+    [KdStrukturaloltp] VARCHAR(10) NOT NULL,
+    [NamaStruktural] VARCHAR(50) NOT NULL,
+    [RDNamaStruktural] VARCHAR(50),
+    [NoUrut] SMALLINT,
+    [NamaStrukturalHeadL1] VARCHAR(50),
+    [RDNamaStrukturalHeadL1] VARCHAR(50),
+    [StatusEnabled] SMALLINT NOT NULL,
+
+    CONSTRAINT UQ_d_Struktural UNIQUE (KdStruktural, KdProfile)
+);
+
+DROP TABLE IF EXISTS [dbo].[d_Suku];
+CREATE TABLE [dbo].[d_Suku] (
+    [KdSuku] SMALLINT NOT NULL,
+    [KdProfile] SMALLINT NOT NULL,
+    [KdSukuoltp] VARCHAR(10) NOT NULL,
+    [NamaSuku] VARCHAR(30) NOT NULL,
+    [RDNamaSuku] VARCHAR(30),
+    [NamaSukuHeadL1] VARCHAR(30),
+    [RDNamaSukuHeadL1] VARCHAR(30),
+    [StatusEnabled] SMALLINT NOT NULL,
+
+    CONSTRAINT UQ_d_Suku UNIQUE (KdSuku, KdProfile)
+);
+
+DROP TABLE IF EXISTS [dbo].[d_Title];
+CREATE TABLE [dbo].[d_Title] (
+    [KdTitle] SMALLINT NOT NULL,
+    [KdProfile] SMALLINT NOT NULL,
+    [KdTitleoltp] VARCHAR(10) NOT NULL,
+    [NamaTitle] VARCHAR(15) NOT NULL,
+    [RDNamaTitle] VARCHAR(15) NOT NULL,
+    [NamaTitleHeadL1] VARCHAR(10),
+    [RDNamaTitleHeadL1] VARCHAR(10),
+    [StatusEnabled] SMALLINT NOT NULL,
+
+    CONSTRAINT UQ_d_Title UNIQUE (KdTitle, KdProfile)
+);
+
+DROP TABLE IF EXISTS [dbo].[d_Triase];
+CREATE TABLE [dbo].[d_Triase] (
+    [KdTriase] SMALLINT NOT NULL,
+    [KdProfile] SMALLINT NOT NULL,
+    [KdTriaseoltp] VARCHAR(10) NOT NULL,
+    [NamaTriase] VARCHAR(20) NOT NULL,
+    [RDNamaTriase] VARCHAR(20) NOT NULL,
+    [StatusEnabled] SMALLINT NOT NULL,
+
+    CONSTRAINT UQ_d_Triase UNIQUE (KdTriase, KdProfile)
+);
+
+DROP TABLE IF EXISTS [dbo].[f_PatientVisite];
+CREATE TABLE [dbo].[f_PatientVisite] (
+    [KdVisite] INT IDENTITY(1,1) PRIMARY KEY,
+    [KdProfile] SMALLINT NOT NULL,
+    [KdKalenderTglMasuk] INT NOT NULL,
+    [KdKalenderTglKeluar] INT NOT NULL,
+    [KdTitle] SMALLINT NOT NULL,
+    [KdJenisKelamin] SMALLINT NOT NULL,
+    [KdStatusPerkawinan] SMALLINT NOT NULL,
+    [KdPekerjaan] SMALLINT NOT NULL,
+    [KdPendidikan] SMALLINT NOT NULL,
+    [KdAlamat] INT NOT NULL,
+    [StatusVisiteProfile] CHAR(4) NOT NULL,
+    [KdTriase] SMALLINT NOT NULL,
+    [KdKelompokPasien] SMALLINT NOT NULL,
+    [NoEntitasPenjaminPasien] INT NOT NULL,
+    [KdKelasJaminan] SMALLINT NOT NULL,
+    [KdKasusPenyakit] SMALLINT NOT NULL,
+    [KdAsalRujukan] SMALLINT NOT NULL,
+    [KdRuanganAsal] SMALLINT NOT NULL,
+    [NoEntitasDokterPengirim] INT NOT NULL,
+    [KdRuanganTujuan] SMALLINT NOT NULL,
+    [StatusVisiteRuangan] CHAR(4) NOT NULL,
+    [KdKelasLayanan] SMALLINT NOT NULL,
+    [KdKelasKamar] SMALLINT NOT NULL,
+    [KdStatusKeluar] SMALLINT NOT NULL,
+    [KdKondisiPasienPulang] SMALLINT NOT NULL,
+    [QtyPasien] SMALLINT NOT NULL,
+    [LamaAntriRegistrasiMenit] INT NOT NULL,
+    [LamaAntriPeriksaMenit] INT NOT NULL,
+    [LamaRawatRuanganJam] INT NOT NULL,
+    [LamaRawatProfileJam] INT NOT NULL,
+    [StatusEnabled] SMALLINT NOT NULL
+);
+
+DROP TABLE IF EXISTS [dbo].[f_PatientVisiteIn];
+CREATE TABLE [dbo].[f_PatientVisiteIn] (
+    [KdVisite] INT IDENTITY(1,1) PRIMARY KEY,
+    [KdProfile] SMALLINT NOT NULL,
+    [KdKalenderTglMasuk] INT NOT NULL,
+    [KdTitle] SMALLINT NOT NULL,
+    [KdJenisKelamin] SMALLINT NOT NULL,
+    [KdStatusPerkawinan] SMALLINT NOT NULL,
+    [KdPekerjaan] SMALLINT NOT NULL,
+    [KdPendidikan] SMALLINT NOT NULL,
+    [KdAlamat] INT NOT NULL,
+    [StatusVisiteProfile] CHAR(4) NOT NULL,
+    [KdTriase] SMALLINT NOT NULL,
+    [KdKelompokPasien] SMALLINT NOT NULL,
+    [NoEntitasPenjaminPasien] INT NOT NULL,
+    [KdKelasJaminan] SMALLINT NOT NULL,
+    [KdKasusPenyakit] SMALLINT NOT NULL,
+    [KdAsalRujukan] SMALLINT NOT NULL,
+    [KdRuanganAsal] SMALLINT NOT NULL,
+    [NoEntitasDokterPengirim] INT NOT NULL,
+    [KdRuanganTujuan] SMALLINT NOT NULL,
+    [StatusVisiteRuangan] CHAR(4) NOT NULL,
+    [KdKelasLayanan] SMALLINT NOT NULL, 
+    [KdKelasKamar] SMALLINT NOT NULL,
+    [QtyPasienMasuk] SMALLINT NOT NULL,
+    [LamaAntriRegistrasiMenit] INT NOT NULL,
+    [LamaAntriPeriksaMenit] INT NOT NULL,
+    [StatusEnabled] SMALLINT NOT NULL
+);
+
+DROP TABLE IF EXISTS [dbo].[f_PatientVisiteMD];
+CREATE TABLE [dbo].[f_PatientVisiteMD] (
+    [KdVisite] INT IDENTITY(1,1) PRIMARY KEY,
+    [KdProfile] SMALLINT NOT NULL,
+    [KdKalenderTglMasuk] INT NOT NULL,
+    [KdKalenderTglKeluar] INT NOT NULL,
+    [KdKalenderTglMeninggal] INT NOT NULL,
+    [KdTitle] SMALLINT NOT NULL,
+    [KdJenisKelamin] SMALLINT NOT NULL,
+    [KdStatusPerkawinan] SMALLINT NOT NULL,
+    [KdPekerjaan] SMALLINT NOT NULL,
+    [KdPendidikan] SMALLINT NOT NULL,
+    [KdAlamat] INT NOT NULL,
+    [StatusVisiteProfile] CHAR(4) NOT NULL,
+    [KdTriase] SMALLINT NOT NULL,
+    [KdKelompokPasien] SMALLINT NOT NULL,
+    [NoEntitasPenjaminPasien] INT NOT NULL,
+    [KdKelasJaminan] SMALLINT NOT NULL,
+    [KdKasusPenyakit] SMALLINT NOT NULL,
+    [KdAsalRujukan] SMALLINT NOT NULL,
+    [KdRuanganAsal] SMALLINT NOT NULL,
+    [NoEntitasDokterPengirim] INT NOT NULL,
+    [KdRuanganTujuan] SMALLINT NOT NULL,
+    [StatusVisiteRuangan] CHAR(4) NOT NULL,
+    [KdKelasLayanan] SMALLINT NOT NULL,
+    [KdKelasKamar] SMALLINT NOT NULL,
+    [KdStatusKeluar] SMALLINT NOT NULL,
+    [KdKondisiPasienPulang] SMALLINT NOT NULL,
+    [KdPenyebabMeninggal] SMALLINT NOT NULL,
+    [QtyPasienMD] SMALLINT NOT NULL,
+    [LamaAntriRegistrasiMenit] INT NOT NULL,
+    [LamaAntriPeriksaMenit] INT NOT NULL,
+    [LamaRawatRuanganJam] INT NOT NULL,
+    [LamaRawatProfileJam] INT NOT NULL,
+    [StatusEnabled] SMALLINT NOT NULL
+);
+
+DROP TABLE IF EXISTS [dbo].[f_PatientVisiteMR];
+CREATE TABLE [dbo].[f_PatientVisiteMR] (
+    [KdVisite] INT IDENTITY(1,1) PRIMARY KEY,
+	[KdProfile] SMALLINT NOT NULL,
+	[KdKalenderTglMasuk] INT NOT NULL,
+	[KdKalenderTglKeluar] INT NOT NULL,
+	[KdKalenderTglPD] INT NOT NULL,
+	[KdTitle] SMALLINT NOT NULL,
+	[KdJenisKelamin] SMALLINT NOT NULL,
+	[KdStatusPerkawinan] SMALLINT NOT NULL,
+	[KdPekerjaan] SMALLINT NOT NULL,
+	[KdPendidikan] SMALLINT NOT NULL,
+	[KdAlamat] INT NOT NULL,
+	[StatusVisiteProfile] CHAR(4) NOT NULL,
+	[KdTriase] SMALLINT NOT NULL,
+	[KdKelompokPasien] SMALLINT NOT NULL,
+	[NoEntitasPenjaminPasien] INT NOT NULL,
+	[KdKelasJaminan] SMALLINT NOT NULL,
+	[KdKasusPenyakit] SMALLINT NOT NULL,
+	[KdAsalRujukan] SMALLINT NOT NULL,
+	[KdRuanganAsal] SMALLINT NOT NULL,
+	[NoEntitasDokterPengirim] INT NOT NULL,
+	[KdRuanganTujuan] SMALLINT NOT NULL,
+	[StatusVisiteRuangan] CHAR(4) NOT NULL,
+	[KdKelasLayanan] SMALLINT NOT NULL,
+	[KdKelasKamar] SMALLINT NOT NULL,
+	[KdStatusKeluar] SMALLINT NOT NULL,
+	[KdKondisiPasienKeluar] SMALLINT NOT NULL,
+	[KdJenisDiagnosa] SMALLINT NOT NULL,
+	[KdICD] SMALLINT NOT NULL,
+	[StatusKasus] CHAR(4) NOT NULL,
+	[QtyPasien] SMALLINT NOT NULL,
+	[LamaPDMenit] INT NOT NULL,
+	[StatusEnabled] SMALLINT NOT NULL
+);
+
+DROP TABLE IF EXISTS [dbo].[f_PatientVisiteOut];
+CREATE TABLE [dbo].[f_PatientVisiteOut] (
+    [KdVisite] INT IDENTITY(1,1) PRIMARY KEY,
+    [KdProfile] SMALLINT NOT NULL,
+    [KdKalenderTglMasuk] INT NOT NULL,
+    [KdKalenderTglKeluar] INT NOT NULL,
+    [KdTitle] SMALLINT NOT NULL,
+    [KdJenisKelamin] SMALLINT NOT NULL,
+    [KdStatusPerkawinan] SMALLINT NOT NULL,
+    [KdPekerjaan] SMALLINT NOT NULL,
+    [KdPendidikan] SMALLINT NOT NULL,
+    [KdAlamat] INT NOT NULL,
+    [StatusVisiteProfile] CHAR(4) NOT NULL,
+    [KdTriase] SMALLINT NOT NULL,
+    [KdKelompokPasien] SMALLINT NOT NULL,
+    [NoEntitasPenjaminPasien] INT NOT NULL,
+    [KdKelasJaminan] SMALLINT NOT NULL,
+    [KdKasusPenyakit] SMALLINT NOT NULL,
+    [KdAsalRujukan] SMALLINT NOT NULL,
+    [KdRuanganAsal] SMALLINT NOT NULL,
+    [NoEntitasDokterPengirim] INT NOT NULL,
+    [KdRuanganTujuan] SMALLINT NOT NULL,
+    [StatusVisiteRuangan] CHAR(4) NOT NULL,
+    [KdKelasLayanan] SMALLINT NOT NULL,
+    [KdKelasKamar] SMALLINT NOT NULL,
+    [KdStatusKeluar] SMALLINT NOT NULL,
+    [KdKondisiPasienPulang] SMALLINT NOT NULL,
+    [QtyPasienKeluar] SMALLINT NOT NULL,
+    [LamaRawatRuanganJam] INT NOT NULL,
+    [LamaRawatProfileJam] INT NOT NULL,
+    [StatusEnabled] SMALLINT NOT NULL
+);
+
+ALTER TABLE EIS_DW.dbo.f_PatientVisiteOut
+ADD
+    CONSTRAINT FK_Profile_VO FOREIGN KEY (KdProfile)
+        REFERENCES EIS_DW.dbo.d_Profile (KdProfile),
+    CONSTRAINT FK_KalenderTglMasuk_VO FOREIGN KEY (KdKalenderTglMasuk)
+        REFERENCES EIS_DW.dbo.d_Kalender (KdKalender),
+    CONSTRAINT FK_KalenderTglKeluar_VO FOREIGN KEY (KdKalenderTglKeluar)
+        REFERENCES EIS_DW.dbo.d_Kalender (KdKalender),
+    CONSTRAINT FK_Title_VO FOREIGN KEY (KdTitle, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Title (KdTitle, KdProfile),
+    CONSTRAINT FK_JenisKelamin_VO FOREIGN KEY (KdJenisKelamin, KdProfile)
+        REFERENCES EIS_DW.dbo.d_JenisKelamin (KdJenisKelamin, KdProfile),
+    CONSTRAINT FK_StatusPerkawinan_VO FOREIGN KEY (KdStatusPerkawinan, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Status (KdStatus, KdProfile),
+    CONSTRAINT FK_Pekerjaan_VO FOREIGN KEY (KdPekerjaan, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Pekerjaan (KdPekerjaan, KdProfile),
+    CONSTRAINT FK_Pendidikan_VO FOREIGN KEY (KdPendidikan, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Pendidikan (KdPendidikan, KdProfile),
+    CONSTRAINT FK_Alamat_VO FOREIGN KEY (KdAlamat)
+        REFERENCES EIS_DW.dbo.d_Alamat (KdAlamat),
+    CONSTRAINT FK_Triase_VO FOREIGN KEY (KdTriase, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Triase (KdTriase, KdProfile),
+    CONSTRAINT FK_KelompokPasien_VO FOREIGN KEY (KdKelompokPasien, KdProfile)
+        REFERENCES EIS_DW.dbo.d_KelompokKlien (KdKelompokKlien, KdProfile),
+    CONSTRAINT FK_KelasJaminan_VO FOREIGN KEY (KdKelasJaminan, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Kelas (KdKelas, KdProfile),
+    CONSTRAINT FK_KasusPenyakit_VO FOREIGN KEY (KdKasusPenyakit, KdProfile)
+        REFERENCES EIS_DW.dbo.d_KasusPenyakit (KdKasusPenyakit, KdProfile),
+    CONSTRAINT FK_AsalRujukan_VO FOREIGN KEY (KdAsalRujukan, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Asal (KdAsal, KdProfile),
+    CONSTRAINT FK_RuanganAsal_VO FOREIGN KEY (KdRuanganAsal, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Ruangan (KdRuangan, KdProfile),
+    CONSTRAINT FK_RuanganTujuan_VO FOREIGN KEY (KdRuanganTujuan, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Ruangan (KdRuangan, KdProfile),
+    CONSTRAINT FK_KelasLayanan_VO FOREIGN KEY (KdKelasLayanan, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Kelas (KdKelas, KdProfile),
+    CONSTRAINT FK_KelasKamar_VO FOREIGN KEY (KdKelasKamar, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Kelas (KdKelas, KdProfile),
+    CONSTRAINT FK_StatusKeluar_VO FOREIGN KEY (KdStatusKeluar, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Status (KdStatus, KdProfile),
+    CONSTRAINT FK_KondisiPasienPulang_VO FOREIGN KEY (KdKondisiPasienPulang, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Kondisi (KdKondisi, KdProfile);
+
+ALTER TABLE EIS_DW.dbo.f_PatientVisiteIn
+ADD
+    CONSTRAINT FK_Profile_VI FOREIGN KEY (KdProfile)
+        REFERENCES EIS_DW.dbo.d_Profile (KdProfile),
+    CONSTRAINT FK_KalenderTglMasuk_VI FOREIGN KEY (KdKalenderTglMasuk)
+        REFERENCES EIS_DW.dbo.d_Kalender (KdKalender),
+    CONSTRAINT FK_Title_VI FOREIGN KEY (KdTitle, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Title (KdTitle, KdProfile),
+    CONSTRAINT FK_JenisKelamin_VI FOREIGN KEY (KdJenisKelamin, KdProfile)
+        REFERENCES EIS_DW.dbo.d_JenisKelamin (KdJenisKelamin, KdProfile),
+    CONSTRAINT FK_StatusPerkawinan_VI FOREIGN KEY (KdStatusPerkawinan, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Status (KdStatus, KdProfile),
+    CONSTRAINT FK_Pekerjaan_VI FOREIGN KEY (KdPekerjaan, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Pekerjaan (KdPekerjaan, KdProfile),
+    CONSTRAINT FK_Pendidikan_VI FOREIGN KEY (KdPendidikan, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Pendidikan (KdPendidikan, KdProfile),
+    CONSTRAINT FK_Alamat_VI FOREIGN KEY (KdAlamat)
+        REFERENCES EIS_DW.dbo.d_Alamat (KdAlamat),
+    CONSTRAINT FK_Triase_VI FOREIGN KEY (KdTriase, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Triase (KdTriase, KdProfile),
+    CONSTRAINT FK_KelompokPasien_VI FOREIGN KEY (KdKelompokPasien, KdProfile)
+        REFERENCES EIS_DW.dbo.d_KelompokKlien (KdKelompokKlien, KdProfile),
+    CONSTRAINT FK_KelasJaminan_VI FOREIGN KEY (KdKelasJaminan, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Kelas (KdKelas, KdProfile),
+    CONSTRAINT FK_KasusPenyakit_VI FOREIGN KEY (KdKasusPenyakit, KdProfile)
+        REFERENCES EIS_DW.dbo.d_KasusPenyakit (KdKasusPenyakit, KdProfile),
+    CONSTRAINT FK_AsalRujukan_VI FOREIGN KEY (KdAsalRujukan, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Asal (KdAsal, KdProfile),
+    CONSTRAINT FK_RuanganAsal_VI FOREIGN KEY (KdRuanganAsal, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Ruangan (KdRuangan, KdProfile),
+    CONSTRAINT FK_RuanganTujuan_VI FOREIGN KEY (KdRuanganTujuan, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Ruangan (KdRuangan, KdProfile),
+    CONSTRAINT FK_KelasLayanan_VI FOREIGN KEY (KdKelasLayanan, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Kelas (KdKelas, KdProfile),
+    CONSTRAINT FK_KelasKamar_VI FOREIGN KEY (KdKelasKamar, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Kelas (KdKelas, KdProfile);
+
+ALTER TABLE EIS_DW.dbo.f_PatientVisiteMD
+ADD
+    CONSTRAINT FK_Profile_VMD FOREIGN KEY (KdProfile)
+        REFERENCES EIS_DW.dbo.d_Profile (KdProfile),
+    CONSTRAINT FK_KalenderTglMasuk_VMD FOREIGN KEY (KdKalenderTglMasuk)
+        REFERENCES EIS_DW.dbo.d_Kalender (KdKalender),
+    CONSTRAINT FK_KalenderTglKeluar_VMD FOREIGN KEY (KdKalenderTglKeluar)
+        REFERENCES EIS_DW.dbo.d_Kalender (KdKalender),
+    CONSTRAINT FK_KalenderTglMeninggal_VMD FOREIGN KEY (KdKalenderTglMeninggal)
+        REFERENCES EIS_DW.dbo.d_Kalender (KdKalender),
+    CONSTRAINT FK_Title_VMD FOREIGN KEY (KdTitle, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Title (KdTitle, KdProfile),
+    CONSTRAINT FK_JenisKelamin_VMD FOREIGN KEY (KdJenisKelamin, KdProfile)
+        REFERENCES EIS_DW.dbo.d_JenisKelamin (KdJenisKelamin, KdProfile),
+    CONSTRAINT FK_StatusPerkawinan_VMD FOREIGN KEY (KdStatusPerkawinan, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Status (KdStatus, KdProfile),
+    CONSTRAINT FK_Pekerjaan_VMD FOREIGN KEY (KdPekerjaan, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Pekerjaan (KdPekerjaan, KdProfile),
+    CONSTRAINT FK_Pendidikan_VMD FOREIGN KEY (KdPendidikan, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Pendidikan (KdPendidikan, KdProfile),
+    CONSTRAINT FK_Alamat_VMD FOREIGN KEY (KdAlamat)
+        REFERENCES EIS_DW.dbo.d_Alamat (KdAlamat),
+    CONSTRAINT FK_Triase_VMD FOREIGN KEY (KdTriase, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Triase (KdTriase, KdProfile),
+    CONSTRAINT FK_KelompokPasien_VMD FOREIGN KEY (KdKelompokPasien, KdProfile)
+        REFERENCES EIS_DW.dbo.d_KelompokKlien (KdKelompokKlien, KdProfile),
+    CONSTRAINT FK_KelasJaminan_VMD FOREIGN KEY (KdKelasJaminan, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Kelas (KdKelas, KdProfile),
+    CONSTRAINT FK_KasusPenyakit_VMD FOREIGN KEY (KdKasusPenyakit, KdProfile)
+        REFERENCES EIS_DW.dbo.d_KasusPenyakit (KdKasusPenyakit, KdProfile),
+    CONSTRAINT FK_AsalRujukan_VMD FOREIGN KEY (KdAsalRujukan, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Asal (KdAsal, KdProfile),
+    CONSTRAINT FK_RuanganAsal_VMD FOREIGN KEY (KdRuanganAsal, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Ruangan (KdRuangan, KdProfile),
+    CONSTRAINT FK_RuanganTujuan_VMD FOREIGN KEY (KdRuanganTujuan, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Ruangan (KdRuangan, KdProfile),
+    CONSTRAINT FK_KelasLayanan_VMD FOREIGN KEY (KdKelasLayanan, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Kelas (KdKelas, KdProfile),
+    CONSTRAINT FK_KelasKamar_VMD FOREIGN KEY (KdKelasKamar, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Kelas (KdKelas, KdProfile),
+    CONSTRAINT FK_StatusKeluar_VMD FOREIGN KEY (KdStatusKeluar, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Status (KdStatus, KdProfile),
+    CONSTRAINT FK_KondisiPasienPulang_VMD FOREIGN KEY (KdKondisiPasienPulang, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Kondisi (KdKondisi, KdProfile),
+    CONSTRAINT FK_PenyebabMeninggal_VMD FOREIGN KEY (KdPenyebabMeninggal, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Penyebab (KdPenyebab, KdProfile);
+
+ALTER TABLE EIS_DW.dbo.f_PatientVisite
+ADD
+    CONSTRAINT FK_Profile_V FOREIGN KEY (KdProfile)
+        REFERENCES EIS_DW.dbo.d_Profile (KdProfile),
+    CONSTRAINT FK_KalenderTglMasuk_V FOREIGN KEY (KdKalenderTglMasuk)
+        REFERENCES EIS_DW.dbo.d_Kalender (KdKalender),
+    CONSTRAINT FK_KalenderTglKeluar_V FOREIGN KEY (KdKalenderTglKeluar)
+        REFERENCES EIS_DW.dbo.d_Kalender (KdKalender),
+    CONSTRAINT FK_Title_V FOREIGN KEY (KdTitle, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Title (KdTitle, KdProfile),
+    CONSTRAINT FK_JenisKelamin_V FOREIGN KEY (KdJenisKelamin, KdProfile)
+        REFERENCES EIS_DW.dbo.d_JenisKelamin (KdJenisKelamin, KdProfile),
+    CONSTRAINT FK_StatusPerkawinan_V FOREIGN KEY (KdStatusPerkawinan, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Status (KdStatus, KdProfile),
+    CONSTRAINT FK_Pekerjaan_V FOREIGN KEY (KdPekerjaan, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Pekerjaan (KdPekerjaan, KdProfile),
+    CONSTRAINT FK_Pendidikan_V FOREIGN KEY (KdPendidikan, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Pendidikan (KdPendidikan, KdProfile),
+    CONSTRAINT FK_Alamat_V FOREIGN KEY (KdAlamat)
+        REFERENCES EIS_DW.dbo.d_Alamat (KdAlamat),
+    CONSTRAINT FK_Triase_V FOREIGN KEY (KdTriase, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Triase (KdTriase, KdProfile),
+    CONSTRAINT FK_KelompokPasien_V FOREIGN KEY (KdKelompokPasien, KdProfile)
+        REFERENCES EIS_DW.dbo.d_KelompokKlien (KdKelompokKlien, KdProfile),
+    CONSTRAINT FK_KelasJaminan_V FOREIGN KEY (KdKelasJaminan, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Kelas (KdKelas, KdProfile),
+    CONSTRAINT FK_KasusPenyakit_V FOREIGN KEY (KdKasusPenyakit, KdProfile)
+        REFERENCES EIS_DW.dbo.d_KasusPenyakit (KdKasusPenyakit, KdProfile),
+    CONSTRAINT FK_AsalRujukan_V FOREIGN KEY (KdAsalRujukan, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Asal (KdAsal, KdProfile),
+    CONSTRAINT FK_RuanganAsal_V FOREIGN KEY (KdRuanganAsal, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Ruangan (KdRuangan, KdProfile),
+    CONSTRAINT FK_RuanganTujuan_V FOREIGN KEY (KdRuanganTujuan, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Ruangan (KdRuangan, KdProfile),
+    CONSTRAINT FK_KelasLayanan_V FOREIGN KEY (KdKelasLayanan, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Kelas (KdKelas, KdProfile),
+    CONSTRAINT FK_KelasKamar_V FOREIGN KEY (KdKelasKamar, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Kelas (KdKelas, KdProfile),
+    CONSTRAINT FK_StatusKeluar_V FOREIGN KEY (KdStatusKeluar, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Status (KdStatus, KdProfile),
+    CONSTRAINT FK_KondisiPasienPulang_V FOREIGN KEY (KdKondisiPasienPulang, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Kondisi (KdKondisi, KdProfile);
+
+ALTER TABLE EIS_DW.dbo.f_PatientVisiteMR
+ADD
+    CONSTRAINT FK_Profile_VMR FOREIGN KEY (KdProfile)
+        REFERENCES EIS_DW.dbo.d_Profile (KdProfile),
+    CONSTRAINT FK_KalenderTglMasuk_VMR FOREIGN KEY (KdKalenderTglMasuk)
+        REFERENCES EIS_DW.dbo.d_Kalender (KdKalender),
+    CONSTRAINT FK_KalenderTglKeluar_VMR FOREIGN KEY (KdKalenderTglKeluar)
+        REFERENCES EIS_DW.dbo.d_Kalender (KdKalender),
+    CONSTRAINT FK_KalenderTglPD_VMR FOREIGN KEY (KdKalenderTglPD)
+        REFERENCES EIS_DW.dbo.d_Kalender (KdKalender),
+    CONSTRAINT FK_Title_VMR FOREIGN KEY (KdTitle, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Title (KdTitle, KdProfile),
+    CONSTRAINT FK_JenisKelamin_VMR FOREIGN KEY (KdJenisKelamin, KdProfile)
+        REFERENCES EIS_DW.dbo.d_JenisKelamin (KdJenisKelamin, KdProfile),
+    CONSTRAINT FK_StatusPerkawinan_VMR FOREIGN KEY (KdStatusPerkawinan, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Status (KdStatus, KdProfile),
+    CONSTRAINT FK_Pekerjaan_VMR FOREIGN KEY (KdPekerjaan, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Pekerjaan (KdPekerjaan, KdProfile),
+    CONSTRAINT FK_Pendidikan_VMR FOREIGN KEY (KdPendidikan, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Pendidikan (KdPendidikan, KdProfile),
+    CONSTRAINT FK_Alamat_VMR FOREIGN KEY (KdAlamat)
+        REFERENCES EIS_DW.dbo.d_Alamat (KdAlamat),
+    CONSTRAINT FK_Triase_VMR FOREIGN KEY (KdTriase, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Triase (KdTriase, KdProfile),
+    CONSTRAINT FK_KelompokPasien_VMR FOREIGN KEY (KdKelompokPasien, KdProfile)
+        REFERENCES EIS_DW.dbo.d_KelompokKlien (KdKelompokKlien, KdProfile),
+    CONSTRAINT FK_KelasJaminan_VMR FOREIGN KEY (KdKelasJaminan, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Kelas (KdKelas, KdProfile),
+    CONSTRAINT FK_KasusPenyakit_VMR FOREIGN KEY (KdKasusPenyakit, KdProfile)
+        REFERENCES EIS_DW.dbo.d_KasusPenyakit (KdKasusPenyakit, KdProfile),
+    CONSTRAINT FK_AsalRujukan_VMR FOREIGN KEY (KdAsalRujukan, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Asal (KdAsal, KdProfile),
+    CONSTRAINT FK_RuanganAsal_VMR FOREIGN KEY (KdRuanganAsal, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Ruangan (KdRuangan, KdProfile),
+    CONSTRAINT FK_RuanganTujuan_VMR FOREIGN KEY (KdRuanganTujuan, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Ruangan (KdRuangan, KdProfile),
+    CONSTRAINT FK_KelasLayanan_VMR FOREIGN KEY (KdKelasLayanan, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Kelas (KdKelas, KdProfile),
+    CONSTRAINT FK_KelasKamar_VMR FOREIGN KEY (KdKelasKamar, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Kelas (KdKelas, KdProfile),
+    CONSTRAINT FK_StatusKeluar_VMR FOREIGN KEY (KdStatusKeluar, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Status (KdStatus, KdProfile),
+    CONSTRAINT FK_KdKondisiPasienKeluar_VMR FOREIGN KEY (KdKondisiPasienKeluar, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Kondisi (KdKondisi, KdProfile),
+    CONSTRAINT FK_JenisDiagnosa_VMR FOREIGN KEY (KdJenisDiagnosa, KdProfile)
+        REFERENCES EIS_DW.dbo.d_JenisDiagnosa (KdJenisDiagnosa, KdProfile),
+    CONSTRAINT FK_ICD_VMR FOREIGN KEY (KdICD, KdProfile)
+        REFERENCES EIS_DW.dbo.d_ICD (KdICD, KdProfile);
+
+ALTER TABLE EIS_DW.dbo.d_Entitas
+ADD
+    CONSTRAINT FK_Profile_Entitas FOREIGN KEY (KdProfile)
+        REFERENCES EIS_DW.dbo.d_Profile (KdProfile),
+    CONSTRAINT FK_JenisEntitas_Entitas FOREIGN KEY (KdJenisEntitas, KdProfile)
+        REFERENCES EIS_DW.dbo.d_JenisEntitas (KdJenisEntitas, KdProfile),
+    CONSTRAINT FK_Title_Entitas FOREIGN KEY (KdTitle, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Title (KdTitle, KdProfile),
+    CONSTRAINT FK_KalenderTglLahir_Entitas FOREIGN KEY (KdKalenderTglLahir)
+        REFERENCES EIS_DW.dbo.d_Kalender (KdKalender),
+    CONSTRAINT FK_JenisKelamin_Entitas FOREIGN KEY (KdJenisKelamin, KdProfile)
+        REFERENCES EIS_DW.dbo.d_JenisKelamin (KdJenisKelamin, KdProfile),
+    CONSTRAINT FK_Agama_Entitas FOREIGN KEY (KdAgama, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Agama (KdAgama, KdProfile),
+    CONSTRAINT FK_StatusPerkawinan_Entitas FOREIGN KEY (KdStatusPerkawinan, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Status (KdStatus, KdProfile),
+    CONSTRAINT FK_Suku_Entitas FOREIGN KEY (KdSuku, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Suku (KdSuku, KdProfile),
+    CONSTRAINT FK_GolonganDarah_Entitas FOREIGN KEY (KdGolonganDarah, KdProfile)
+        REFERENCES EIS_DW.dbo.d_GolonganDarah (KdGolonganDarah, KdProfile),
+    CONSTRAINT FK_Pekerjaan_Entitas FOREIGN KEY (KdPekerjaan, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Pekerjaan (KdPekerjaan, KdProfile),
+    CONSTRAINT FK_Struktural_Entitas FOREIGN KEY (KdStruktural, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Struktural (KdStruktural, KdProfile),
+    CONSTRAINT FK_Fungsional_Entitas FOREIGN KEY (KdFungsional, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Fungsional (KdFungsional, KdProfile),
+    CONSTRAINT FK_Pangkat_Entitas FOREIGN KEY (KdPangkat, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Pangkat (KdPangkat, KdProfile),
+    CONSTRAINT FK_Negara_Entitas FOREIGN KEY (KdNegara)
+        REFERENCES EIS_DW.dbo.d_Negara (KdNegara),
+    CONSTRAINT FK_Pendidikan_Entitas FOREIGN KEY (KdPendidikan, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Pendidikan (KdPendidikan, KdProfile),
+    CONSTRAINT FK_Jurusan_Entitas FOREIGN KEY (KdJurusan, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Jurusan (KdJurusan, KdProfile),
+    CONSTRAINT FK_Alamat_Entitas FOREIGN KEY (KdAlamat)
+        REFERENCES EIS_DW.dbo.d_Alamat (KdAlamat),
+    CONSTRAINT FK_KategoriEntitas_Entitas FOREIGN KEY (KdKategoriEntitas, KdProfile)
+        REFERENCES EIS_DW.dbo.d_KategoriEntitas (KdKategoriEntitas, KdProfile),
+    CONSTRAINT FK_StatusEntitas_Entitas FOREIGN KEY (KdStatusEntitas, KdProfile)
+        REFERENCES EIS_DW.dbo.d_Status (KdStatus, KdProfile);
+
+ALTER TABLE EIS_DW.dbo.d_JenisDiagnosa
+ADD
+    CONSTRAINT FK_Profile_JenisDiagnosa FOREIGN KEY (KdProfile)
+        REFERENCES EIS_DW.dbo.d_Profile (KdProfile);
+
+ALTER TABLE EIS_DW.dbo.d_KategoriEntitas
+ADD
+    CONSTRAINT FK_Profile_KategoriEntitas FOREIGN KEY (KdProfile)
+        REFERENCES EIS_DW.dbo.d_Profile (KdProfile);
+
+ALTER TABLE EIS_DW.dbo.d_ICD
+ADD
+    CONSTRAINT FK_Profile_ICD FOREIGN KEY (KdProfile)
+        REFERENCES EIS_DW.dbo.d_Profile (KdProfile);
+
+ALTER TABLE EIS_DW.dbo.d_LevelTingkat
+ADD
+    CONSTRAINT FK_Profile_LevelTingkat FOREIGN KEY (KdProfile)
+        REFERENCES EIS_DW.dbo.d_Profile (KdProfile);
+
+ALTER TABLE EIS_DW.dbo.d_JenisEntitas
+ADD
+    CONSTRAINT FK_Profile_JenisEntitas FOREIGN KEY (KdProfile)
+        REFERENCES EIS_DW.dbo.d_Profile (KdProfile);
+
+ALTER TABLE EIS_DW.dbo.d_Eselon
+ADD
+    CONSTRAINT FK_Profile_Eselon FOREIGN KEY (KdProfile)
+        REFERENCES EIS_DW.dbo.d_Profile (KdProfile);
+
+ALTER TABLE EIS_DW.dbo.d_Fungsional
+ADD
+    CONSTRAINT FK_Profile_Fungsional FOREIGN KEY (KdProfile)
+        REFERENCES EIS_DW.dbo.d_Profile (KdProfile);
+
+ALTER TABLE EIS_DW.dbo.d_Struktural
+ADD
+    CONSTRAINT FK_Profile_Struktural FOREIGN KEY (KdProfile)
+        REFERENCES EIS_DW.dbo.d_Profile (KdProfile);
+
+ALTER TABLE EIS_DW.dbo.d_Jurusan
+ADD
+    CONSTRAINT FK_Profile_Jurusan FOREIGN KEY (KdProfile)
+        REFERENCES EIS_DW.dbo.d_Profile (KdProfile);
+
+ALTER TABLE EIS_DW.dbo.d_Pangkat
+ADD
+    CONSTRAINT FK_Profile_Pangkat FOREIGN KEY (KdProfile)
+        REFERENCES EIS_DW.dbo.d_Profile (KdProfile);
+
+ALTER TABLE EIS_DW.dbo.d_Pekerjaan
+ADD
+    CONSTRAINT FK_Profile_Pekerjaan FOREIGN KEY (KdProfile)
+        REFERENCES EIS_DW.dbo.d_Profile (KdProfile);
+
+ALTER TABLE EIS_DW.dbo.d_Agama
+ADD
+    CONSTRAINT FK_Profile_Agama FOREIGN KEY (KdProfile)
+        REFERENCES EIS_DW.dbo.d_Profile (KdProfile);
+
+ALTER TABLE EIS_DW.dbo.d_JenisKelamin
+ADD
+    CONSTRAINT FK_Profile_JenisKelamin FOREIGN KEY (KdProfile)
+        REFERENCES EIS_DW.dbo.d_Profile (KdProfile);
+
+ALTER TABLE EIS_DW.dbo.d_Title
+ADD
+    CONSTRAINT FK_Profile_Title FOREIGN KEY (KdProfile)
+        REFERENCES EIS_DW.dbo.d_Profile (KdProfile);
+
+ALTER TABLE EIS_DW.dbo.d_Hubungan
+ADD
+    CONSTRAINT FK_Profile_Hubungan FOREIGN KEY (KdProfile)
+        REFERENCES EIS_DW.dbo.d_Profile (KdProfile);
+
+ALTER TABLE EIS_DW.dbo.d_JenisDokumen
+ADD
+    CONSTRAINT FK_Profile_JenisDokumen FOREIGN KEY (KdProfile)
+        REFERENCES EIS_DW.dbo.d_Profile (KdProfile);
+
+ALTER TABLE EIS_DW.dbo.d_GolonganDarah
+ADD
+    CONSTRAINT FK_Profile_GolonganDarah FOREIGN KEY (KdProfile)
+        REFERENCES EIS_DW.dbo.d_Profile (KdProfile);
+
+ALTER TABLE EIS_DW.dbo.d_Suku
+ADD
+    CONSTRAINT FK_Profile_Suku FOREIGN KEY (KdProfile)
+        REFERENCES EIS_DW.dbo.d_Profile (KdProfile);
+
+ALTER TABLE EIS_DW.dbo.d_Pendidikan
+ADD
+    CONSTRAINT FK_Profile_Pendidikan FOREIGN KEY (KdProfile)
+        REFERENCES EIS_DW.dbo.d_Profile (KdProfile);
+
+ALTER TABLE EIS_DW.dbo.d_Triase
+ADD
+    CONSTRAINT FK_Profile_Triase FOREIGN KEY (KdProfile)
+        REFERENCES EIS_DW.dbo.d_Profile (KdProfile);
+
+ALTER TABLE EIS_DW.dbo.d_KelompokKlien
+ADD
+    CONSTRAINT FK_Profile_KelompokKlien FOREIGN KEY (KdProfile)
+        REFERENCES EIS_DW.dbo.d_Profile (KdProfile);
+
+ALTER TABLE EIS_DW.dbo.d_Kondisi
+ADD
+    CONSTRAINT FK_Profile_Kondisi FOREIGN KEY (KdProfile)
+        REFERENCES EIS_DW.dbo.d_Profile (KdProfile);
+
+ALTER TABLE EIS_DW.dbo.d_KasusPenyakit
+ADD
+    CONSTRAINT FK_Profile_KasusPenyakit FOREIGN KEY (KdProfile)
+        REFERENCES EIS_DW.dbo.d_Profile (KdProfile);
+
+ALTER TABLE EIS_DW.dbo.d_Penyebab
+ADD
+    CONSTRAINT FK_Profile_Penyebab FOREIGN KEY (KdProfile)
+        REFERENCES EIS_DW.dbo.d_Profile (KdProfile);
+
+ALTER TABLE EIS_DW.dbo.d_Status
+ADD
+    CONSTRAINT FK_Profile_Status FOREIGN KEY (KdProfile)
+        REFERENCES EIS_DW.dbo.d_Profile (KdProfile);
+
+ALTER TABLE EIS_DW.dbo.d_Ruangan
+ADD
+    CONSTRAINT FK_Profile_Ruangan FOREIGN KEY (KdProfile)
+        REFERENCES EIS_DW.dbo.d_Profile (KdProfile);
+
+ALTER TABLE EIS_DW.dbo.d_Kelas
+ADD
+    CONSTRAINT FK_Profile_Kelas FOREIGN KEY (KdProfile)
+        REFERENCES EIS_DW.dbo.d_Profile (KdProfile);
+
+ALTER TABLE EIS_DW.dbo.d_Asal
+ADD
+    CONSTRAINT FK_Profile_Asal FOREIGN KEY (KdProfile)
+        REFERENCES EIS_DW.dbo.d_Profile (KdProfile);</sql>
+    <set_params>N</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+    </arguments>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>96</xloc>
+      <yloc>64</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step_error_handling>
+  </step_error_handling>
+  <slave-step-copy-partition-distribution>
+  </slave-step-copy-partition-distribution>
+  <slave_transformation>N</slave_transformation>
+  <attributes/>
+</transformation>
